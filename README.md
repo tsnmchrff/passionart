@@ -1,4 +1,4 @@
 # passionart
 
-Bonjour tout le monde
 mise en place
+Je mets un texte dans mon Readme...
