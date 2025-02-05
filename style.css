@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   background: white;
   height: 100%;
@@ -14,9 +17,18 @@ h1 {
     rgb(237, 218, 193, 0.08) 30%,
     rgb(249, 243, 235, 0.03) 62%
   );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100hv;
+  /*width: 100%;
+  height: 100vh;
+  width: 100%;
+  max-width: 613%;
+  height: 3563px;*/
 }
 
-.dark_background {
+/*.dark_background {
   background: linear-gradient(
     rgb(187, 118, 22, 0.69) 0%,
     rgb(212, 168, 107, 0.8) 18%,
@@ -26,4 +38,114 @@ h1 {
   );
   width: 613px;
   height: 2509px;
+}*/
+
+.about {
+  /*position: relative;*/
+  /*top: 92%;
+  margin-top: -52px;*/
+  background-color: rgb(238, 170, 140, 0.95);
+  width: 60%;
+  max-width: 800px;
+  text-align: justify;
+  /*min-height: auto; /*ajoute la hauteur en fonction du contenu. De base c'est en px*/
+  display: flex;
+  flex-direction: column; /*Assure la disposition verticale*/
+  /*margin: 0;
+  padding-bottom: 15px; /*ajoute de l'espace à l'intérieur, en bas
+  
+  flex-direction: column;
+  gap: 5px; /* Réduit l’espace entre les enfants 
+  justify-content: center;
+  align-items: center;
+  /*height: 100vh;*/
+  /*text-align: center;
+  padding: 20px;
+  box-sizing: border-box; /*Empêche au padding d'agrandir la div rose*/
+  /*overflow: hidden; /*Empêche le débordement
+  gap: 20px;
+  padding-bottom: 2px;*/
+}
+.about_header {
+  color: #620a0a;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+  width: 538;
+  height: 144;
+  text-align: center; /*assure que le texte est bien centré.*/
+  /*padding-top: 2px; /*j'ai ajouté un espace de 9px au-dessus de lui par rapport à l'arrête du sommet de la div About. De l'espace à l'intérieur de la div
+  margin: 0; /*je réinitialise la marge de base pour que les 9px s'appliquent strictement 
+  font-size: 20px;*/
+}
+.about_paragraph {
+  color: #620a0a;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* permet d'utiliser Flexbox pour aligner le texte facilement.*/
+  /* justify-content: center; /*centre le texte horizontalement.
+      align-items: center;
+      margin: 0;
+  max-width: 90%; /*Evite que le texte soit trop large
+  height: 144px;
+  font-size: 20px;
+  max-width: 80%;
+  word-wrap: break-word; /*Coupe les long mots si c'est utile.Evite que le texte trop long dépasse*/
+  /* position: relative; /*bof
+  overflow-wrap: break-word;
+  line-height: 0;*/
+}
+
+.who_am_i_button {
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 10px;
+  cursor: pointer;
+
+  /*position: relative;*/
+  background-color: rgb(255, 226, 163, 85%);
+  border-color: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  /*width: 126px;
+  height: 40px;
+  border-radius: 20px; /*la moitié de la heuteur*/
+  /*display: flex;
+  justify-content: center;
+  align-items: center;
+  /*left: ; calcul pour centrer (merci pour ta méthode Corto)
+  margin-top: 20px;*/
+}
+
+.who_am_i_button_paragraph {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  /* position: relative;
+  width: 94px;
+  height: 28.94px;
+  position: relative;
+  color: #620a0a;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  left: 5px;
+  font-size: 20px;*/
+}
+
+.brand {
+  position: absolute; /*j'ai dû le mettre pour avoir mon positionnement strict...*/
+  width: 100%;
+  height: 11px;
+  bottom: 0;
+  left: 0;
+  color: #620a0a;
+  /*padding: 10px;*/
+  display: flex;
+  padding: 10px 0 10px 10px;
+  margin: 0;
+  text-align: left;
+  font-size: 10px;
 }
