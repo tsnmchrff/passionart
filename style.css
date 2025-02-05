@@ -1,11 +1,12 @@
 body {
   background: white;
+  height: 100%;
 }
 
 h1 {
   color: rgb();
 }
-.non {
+.light_background {
   background: linear-gradient(
     rgb(187, 118, 22, 0.31) 0%,
     rgb(212, 168, 107, 0.2) 18%,
@@ -13,11 +14,9 @@ h1 {
     rgb(237, 218, 193, 0.08) 30%,
     rgb(249, 243, 235, 0.03) 62%
   );
-  width: 613px;
-  height: 2509px;
 }
 
-.oui {
+.dark_background {
   background: linear-gradient(
     rgb(187, 118, 22, 0.69) 0%,
     rgb(212, 168, 107, 0.8) 18%,
