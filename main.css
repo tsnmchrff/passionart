@@ -1,0 +1,1041 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0; /* Supprime les marges par défaut du body */
+  padding: 0; /* Supprime les padding par défaut */
+}
+
+.base {
+  /* width: 613px;*/
+  width: 100%;
+  height: 7126px;
+  background: linear-gradient(
+    rgba(187, 118, 22, 0.69) 0%,
+    /* #BB7616 à 69% d'opacité */ rgba(212, 168, 107, 0.8) 18%,
+    /* #D4A86B à 80% d'opacité */ rgba(237, 218, 193, 0.92) 30%,
+    /* #EDDAC1 à 92% d'opacité */ rgba(249, 243, 235, 0.97) 62%
+      /* #F9F3EB à 97% d'opacité */
+  );
+
+  /* background: linear-gradient(
+    rgba(187, 118, 21, 0.7),
+    rgba(211, 168, 107, 0.8)
+  );*/
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.bande_horizontale {
+  width: 100%;
+  height: 214px;
+  background: rgba(255, 225, 162, 1);
+  opacity: 1;
+  position: absolute;
+  top: 104px;
+  left: 0px;
+  overflow: hidden;
+
+  /*height: auto; /*Permet à la div de s'adapter au contenu
+  min-height: 214px;*/
+}
+.slogan {
+  /* display: flex;
+  justify-content: center;*/
+  width: 640px;
+  color: rgba(255, 62, 62, 1);
+  position: relative;
+  top: 48px;
+  left: 35%;
+  font-family: Italiana;
+  font-weight: Regular;
+  font-size: 48px;
+  opacity: 1;
+  text-align: center;
+}
+.bande_verticale {
+  width: 216px;
+  height: 100%;
+  background: linear-gradient(
+    rgba(255, 156, 113, 0.65) 0%,
+    /* #FF9C71 avec 65% d'opacité */ rgba(202, 123, 89, 0.65) 50%,
+    /* #CA7B59 avec 65% d'opacité */ rgba(153, 93, 68, 0.65) 100%
+      /* #995D44 avec 65% d'opacité */
+  );
+  /*background: linear-gradient(rgba(255, 155, 113, 1), rgba(201, 123, 89, 1));*/
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 82px;
+  overflow: hidden;
+}
+.logo {
+  width: 103px;
+  color: rgba(124, 17, 17, 1);
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  font-family: Italiana;
+  font-weight: Regular;
+  font-size: 42px;
+  opacity: 1;
+  text-align: center;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end; /*space-around;Centre horizontalement les éléments */
+  align-items: center;
+  gap: 0; /* Ajuste l’espace entre chaque élément du menu */
+  width: 100%; /* Le menu occupe toute la largeur */
+  /*width: calc(100% - 200px);  Ajuste la largeur pour exclure la div rose */
+  margin-left: 185px; /* Décale le menu pour ne pas chevaucher la div rose */
+  height: 60px; /* Ajuste la hauteur si besoin */
+  position: absolute;
+  top: 1px; /* Ajuste la position verticale */
+  /* background: transparent;*/
+  right: 0; /* Positionne le menu contre le bord droit */
+}
+
+.menu_icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*right: 100%;*/
+  font-size: 26px; /* Ajuste la taille du texte */
+  font-family: Inter;
+  gap: 10;
+  font-weight: bold;
+  color: rgba(255, 225, 162, 1);
+  text-align: center;
+  padding: 0 50px;
+  white-space: nowrap; /* Empêche les textes de passer à la ligne */
+}
+.menu_icone:hover {
+  /*display: flex;
+  align-items: center;*/
+
+  cursor: pointer;
+  /*background-color: rgb(247, 173, 142);*/ /*Vaut mieux pas*/
+  border-radius: 10px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;
+}
+
+/*.menu_item {
+  font-size: 16px;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  color: rgba(255, 225, 162, 1);
+  text-align: center;
+  padding: 10px; /* Ajuste le padding autour du texte 
+  white-space: nowrap; /* Empêche les textes de passer à la ligne 
+}
+
+.menu_item:hover {
+  cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 10px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;
+}*/
+
+/*.menu_baton {
+  display: flex;
+  align-items: center;
+  /* padding-inline: 10px;
+  /*flex-wrap: wrap;
+  gap:10px; Ajuste l'espace entre le texte et les batons
+}*/
+
+.baton,
+.batons {
+  width: 0px;
+  height: 72px;
+  margin: 0; /* Supprime tout espace autour des traits */
+}
+.baton {
+  /*width: 1px;
+  height: 72px;
+  margin:0;*/
+  background-color: transparent;
+}
+.batons {
+  /*width: 1px;
+  height: 72px;
+  margin:0;*/
+  background-color: transparent;
+}
+.sep1,
+.sep2,
+.sep3,
+.sep4 {
+  width: 2px;
+  height: 72px;
+  margin: 0;
+  background-color: rgba(255, 156, 113, 1);
+}
+.menu_icone,
+.sep1,
+.sep2,
+.sep3,
+.sep4 {
+  transform: translateY(15px); /* Descend les traits de 10px */
+}
+.oeuvre,
+.tutoriel,
+.mentorat,
+.a_propos,
+.contact:hover {
+  background-color: rgba(255, 156, 113, 0.65) 50%;
+  padding: 15px; /* Ajuste le padding autour du texte */
+}
+
+.oeuvre {
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  color: rgba(255, 225, 162, 1);
+  text-align: center;
+
+  white-space: nowrap; /* Empêche les textes de passer à la ligne */
+  /*width: 130px;
+  color: rgba(255, 225, 162, 1);
+  position: absolute;
+  top: 35px;
+  left: 326px;
+  /* font-family: Inter;*/
+  /* font-weight: Bold;*/
+  /*font-size: 13px;
+  opacity: 1;
+  /*text-align: left;*/
+  /*text-align: center;
+  background-color: transparent;
+  /*padding: 10px;*/
+}
+.oeuvre:hover {
+  /*cursor: pointer;*/
+  background-color: rgb(247, 173, 142);
+  border-radius: 10px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;
+  /*cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 65px 65px 65px 65px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;*/
+}
+.tutoriel {
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  color: rgba(255, 225, 162, 1);
+  text-align: center;
+  white-space: nowrap;
+  /*width: 96px;
+  color: rgba(255, 225, 162, 1);
+  position: absolute;
+  top: 35px;
+  left: 480px;
+  /*font-family: Inter;
+  font-weight: Bold;
+  font-size: 13px;
+  opacity: 1;
+  text-align: center;
+  padding: 10px;
+  background-color: transparent;*/
+}
+.tutoriel:hover {
+  cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 10px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;
+  /* cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 65px 65px 65px 65px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;*/
+}
+.mentorat {
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  color: rgba(255, 225, 162, 1);
+  text-align: center;
+  white-space: nowrap;
+  /*width: 92px;
+  color: rgba(255, 225, 162, 1);
+  position: absolute;
+  top: 35px;
+  left: 624px;
+  /* font-family: Inter;
+  font-weight: Bold;
+  font-size: 13px;
+  opacity: 1;
+  text-align: center;
+  padding: 10px;*/
+}
+.mentorat:hover {
+  cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 10px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;
+  /*cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 65px 65px 65px 65px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;*/
+}
+
+.a_propos {
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  color: rgba(255, 225, 162, 1);
+  text-align: center;
+  white-space: nowrap;
+  /*width: 92px;
+  color: rgba(255, 225, 162, 1);
+  position: absolute;
+  top: 35px;
+  left: 745px;
+  /*font-family: Inter;
+  font-weight: Bold;
+  font-size: 13px;
+  opacity: 1;
+  text-align: center;
+  padding: 10px;*/
+}
+.a_propos:hover {
+  cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 10px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;
+  /*cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 65px 65px 65px 65px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;*/
+}
+.contact {
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  color: rgba(255, 225, 162, 1);
+  text-align: center;
+  padding: 15px; /* Ajuste le padding autour du texte */
+  white-space: nowrap;
+  /*width: 90px;
+  color: rgba(255, 225, 162, 1);
+  position: absolute;
+  top: 35px;
+  left: 864px;
+  /*font-family: Inter;
+  font-weight: Bold;
+  font-size: 13px;
+  opacity: 1;
+  text-align: center;
+  padding: 10px;*/
+}
+.contact:hover {
+  cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 10px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;
+  /*cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 65px 65px 65px 65px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;*/
+}
+
+.defilement {
+  display: flex;
+  justify-content: space-around; /*répartit les icpones de manière équilibrée*/
+  align-items: center;
+  /*gap: 20px;*/
+  width: 802px;
+  height: 134px;
+  border: 1px solid color-none; /*si jamais je décide de mettre les icônes à l'intérieur de cette div*/
+  background: rgba(255, 155, 113, 0.7);
+  opacity: 1;
+  position: absolute;
+  overflow: visible;
+  top: 396px; /*197px;*/
+  left: 410.04px;
+  border-radius: 65px 65px 65px 65px;
+  padding: 0 20px; /*Ajoute un petit padding pour éviter que les icônes touchent les bords*/
+  /*overflow: hidden;*/
+}
+
+.clean {
+  width: 62px;
+  height: 54px;
+  background-image: url("image/Parfum.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  /* position: relative;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*overflow: hidden;*/
+}
+.ceramic {
+  /*max-width: 100%;
+  max-height: 100%;*/
+  width: 62px;
+  height: 64px;
+  background: url("image/oriental.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  /* position: relative;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* overflow: hidden;*/
+}
+
+.paper {
+  width: 54px;
+  height: 52px;
+  background: url("image/oiseau.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  /*position: relative;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* overflow: hidden;*/
+}
+.fabrics {
+  width: 70px;
+  height: 56px;
+  background: url("image/textile.png");
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  /*position: relative;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* overflow: hidden;*/
+}
+.beeswax {
+  width: 56px;
+  height: 56px;
+  background: url("image/hawai.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  /*position: relative;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*overflow: hidden;*/
+}
+.jewel {
+  width: 66px;
+  height: 56px;
+  background: url("image/perle.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  /*position: relative;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*overflow: hidden;*/
+}
+.jewel:hover {
+  cursor: pointer;
+}
+.pottery {
+  width: 61px;
+  color: rgba(124, 17, 17, 1);
+  position: absolute;
+  top: 241px;
+  left: 23px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 11px;
+  opacity: 1;
+  text-align: left;
+}
+.stationery {
+  width: 55px;
+
+  color: rgba(124, 17, 17, 1);
+  position: absolute;
+  top: 241px;
+  left: 96px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 11px;
+  opacity: 1;
+  text-align: left;
+}
+.care {
+  width: 29px;
+  color: rgba(124, 17, 17, 1);
+  position: absolute;
+  top: 241px;
+  left: 166px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 11px;
+  opacity: 1;
+  text-align: center;
+}
+.pearl {
+  width: 38px;
+  color: rgba(124, 17, 17, 1);
+  position: absolute;
+  top: 242px;
+  left: 324px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 11px;
+  opacity: 1;
+  text-align: left;
+}
+.textile {
+  width: 35px;
+  color: rgba(124, 17, 17, 1);
+  position: absolute;
+  top: 238px;
+  left: 270px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 10px;
+  opacity: 1;
+  text-align: center;
+}
+.wax {
+  width: 24px;
+  color: rgba(124, 17, 17, 1);
+  position: absolute;
+  top: 241px;
+  left: 229px;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 11px;
+  opacity: 1;
+  text-align: left;
+}
+.pottery,
+.stationery,
+.care,
+.pearl,
+.textile,
+.wax {
+  /* display: inline-block;*/
+  position: static; /*supprime absolute pour suivre le flux normal*/
+  text-align: center;
+  font-size: 22px;
+  /*margin-top: 5px; /*ajuste l'espacement sous l'icône*/
+  margin-top: 88px;
+}
+.pottery,
+.stationery,
+.care,
+.pearl,
+.textile,
+.wax:hover {
+  cursor: pointer;
+}
+
+.clean,
+.ceramic,
+.paper,
+.fabrics,
+.beeswax,
+.jewel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+.clean,
+.ceramic,
+.paper,
+.fabrics,
+.beeswax,
+.jewel:hover {
+  cursor: pointer;
+}
+.chocolate {
+  width: 256px;
+  height: 342px;
+  background: url("image/chocolat_candle.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 696px;
+  left: -150px;
+  overflow: hidden;
+}
+.bougie_simple {
+  width: 248px;
+  height: 330px;
+  background: url("image/Bougie_simple.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 680px;
+  left: 152.02px;
+  overflow: hidden;
+}
+.brown {
+  width: 214px;
+  height: 320px;
+  background: url("image/Perfum_brown.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 680px;
+  left: 444.02px;
+  overflow: hidden;
+}
+.ocean {
+  width: 248px;
+  height: 330px;
+  background: url("image/Blue_fish.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 680px;
+  left: 692px;
+  overflow: hidden;
+}
+.copel {
+  width: 226px;
+  height: 338px;
+  background: url("image/coupelle.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 670.02px;
+  left: 970px;
+  overflow: hidden;
+}
+.brume {
+  width: 264px;
+  height: 264px;
+  background: url("image/boucle\ d'oreille\ verte\ brume.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1126.06px;
+  left: 30.06px;
+  overflow: hidden;
+}
+.tulip {
+  width: 278px;
+  height: 272px;
+  background: url("image/tulip_origami.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1126px;
+  left: 410.08px;
+  overflow: hidden;
+}
+.letter {
+  width: 264px;
+  height: 264px;
+  background: url("image/wax_letter.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1114px;
+  left: 794.06px;
+  overflow: hidden;
+}
+.river {
+  width: 306px;
+  height: 306px;
+  background: url("image/river_pearl.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1108px;
+  left: 1148.02px;
+  overflow: hidden;
+}
+.beach {
+  width: 252px;
+  height: 336px;
+  background: url("image/bag_beach.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1562px;
+  left: 140px;
+  overflow: hidden;
+}
+.strawberry {
+  width: 266px;
+  height: 354px;
+  background: url("image/strawberry_plate.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1544px;
+  left: 586.76px;
+  overflow: hidden;
+}
+.cute {
+  width: 302px;
+  height: 302px;
+  background: url("image/pink_perfum.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 1572px;
+  left: 1044.42px;
+  overflow: hidden;
+}
+.spiral {
+  width: 242px;
+  height: 322px;
+  background: url("image/branche\ à\ spiral.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 2212.24px;
+  left: 306.52px;
+  overflow: hidden;
+}
+.three {
+  width: 230px;
+  height: 312px;
+  background: url("image/three_fish.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 2126.12px;
+  left: 814px;
+  overflow: hidden;
+}
+.paragraphe_apropos {
+  margin-top: 0%;
+  padding-top: 0px;
+  color: rgba(97, 10, 10, 1);
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 1.6; /*Augmente l'espace entre les lignes pour un rendu plus propre*/
+  text-align: left;
+}
+.mark {
+  color: rgba(124, 17, 17, 1);
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  transform: translation(-50%);
+  font-family: Inter;
+  font-weight: Regular;
+  opacity: 1;
+  text-align: center;
+  font-size: 13px;
+  margin: 0;
+  padding: 40px;
+  /*display: block; /* Si nécessaire pour l'alignement */
+  /*align-content: stretch;*/
+}
+.footrose {
+  width: 100%;
+  height: auto; /*Permet à la div de s'adapter au contenu*/
+  min-height: 300px;
+  background: rgba(238, 169, 139, 0.9);
+  opacity: 1;
+  position: absolute;
+  bottom: 108px;
+  /*top: 6661px;*/
+  left: 0%; /*aligne sur la gauche*/
+  padding: 50px 10%; /*Ajoute un padding pour bien centrer le texte */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 0; /*supp tte bordure arrondie*/
+  margin-bottom: 21px;
+
+  /*min-height: 482px;
+  background: rgba(238, 169, 139, 0.9);
+  opacity: 1;
+  position: absolute;
+  top: 3267px;
+  left: 0px;
+  padding: 100px 15%; /*Ajuste l'espacement pour un meilleur rendu*/
+  /*display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  /*overflow: visible; /*permet au texte d'être bien affiché*/
+  /*padding: 108px 20px 50px; /*Ajoute du padding sur les côtés et en bas pour éviter que le texte touche les bords*/
+}
+
+.paragraphe_apropos {
+  margin-top: 0%;
+  padding-top: 0px;
+  color: rgba(97, 10, 10, 1);
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 1.6; /*Augmente l'espace entre les lignes pour un rendu plus propre*/
+  text-align: left;
+  /*word-wrap: break-word;*/
+
+  /* font-weight: Regular;
+ 
+  text-align: left;
+   /*augente l'espace entre les lignes*/
+  /*word-wrap: break-word; /*Empêche le texte de dépasser*/
+  /* position: static; enlève le positionnement absolu*/
+  /*position: relative;
+  margin-top: 10px;
+  /*top: 3299px;
+  left: 50%;
+  opacity: 1;*/
+}
+
+.entete_apropos {
+  margin-top: 30px; /*Ajoute de l'espace entre le texte et "à propos"*/
+  font-size: 22px;
+  font-weight: bold;
+  color: rgba(124, 17, 17, 1);
+  text-shadow: -1px -1px 0 white, 1px 1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+  margin-bottom: 20px; /*Ajoute un espace sous le titre*/
+  /*width: auto;
+  color: rgba(124, 17, 17, 1);
+  text-shadow: -1px -1px 0 white, 1px 1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 15px;
+  text-align: center;
+  position: static; /*Enlève le positionnement absolu*/
+  /*position: relative;
+  top: 3276px;
+  left: 50%;
+  
+  font-size: 15px;
+  opacity: 1;
+  */
+}
+.button_about {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Inter;
+  font-weight: Regular;
+  font-size: 15px;
+  color: rgba(97, 10, 10, 1);
+  background-color: rgba(255, 226, 163);
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  gap: 0; /*supp tte espace*/
+  align-items: flex-start; /* Aligne tout au début sans espace */
+  padding: 0;
+  margin: 0;
+}
+.diy {
+  width: 212px;
+  height: 378px;
+  background: url("image/table_activity.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 2656.1px;
+  left: 658.02px;
+  overflow: hidden;
+}
+.flowers {
+  width: 230px;
+  height: 344px;
+  background: url("image/bouquet\ coloré.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 2856.96px;
+  left: 88px;
+  overflow: hidden;
+}
+
+.main_pottery {
+  width: 262px; /*430px;*/
+  height: 384px; /*476px;*/
+  background: url("image/main_pottery.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  bottom: 985.04px;
+  left: 32px;
+  overflow: hidden;
+}
+.red_baya {
+  width: 282px;
+  height: 376px;
+  background: url("image/red_baya.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  bottom: 3050.9px;
+  left: 1px;
+  overflow: hidden;
+}
+.branche {
+  width: 238.78px;
+  height: 443.9px;
+  background: url("image/branche\ rose.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  bottom: 2924.42px;
+  left: 885.68px;
+  overflow: hidden;
+  transform: rotate(90deg);
+}
+.vrac {
+  width: 344px;
+  height: 472px;
+  background: url("image/Parfum\ en\ vrac.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  bottom: 2154.62px;
+  left: 166.02px;
+  overflow: hidden;
+}
+.blue_pearl {
+  width: 340px;
+  height: 384px;
+  background: url("image/blue_pearl.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  bottom: 1548.16px;
+  left: 1069px;
+  overflow: hidden;
+}
+.gold {
+  width: 434px;
+  height: 290px;
+  background: url("image/gold_less.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  bottom: 3472px;
+  left: 582px;
+  overflow: hidden;
+}
+.lunisolail {
+  width: 430px;
+  height: 430px;
+  background: url("image/lune\ et\ solail.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  bottom: 606.06px;
+  left: 340px;
+  /*top: 2214px;
+  left: 74px;*/
+  overflow: hidden;
+}
+.tournesol {
+  width: 145px; /*112px;*/
+  height: 150px; /*112*/
+  background: url("../passionart/image/sunflower.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 135px;
+  left: 115px;
+  overflow: hidden;
+  /* width: 145px;
+  height: 150px;
+  background: url("image/sunflower.png");
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  position: absolute;
+  top: 3.8%;
+  left: 35px;
+*/
+}
