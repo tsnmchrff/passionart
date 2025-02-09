@@ -2,33 +2,26 @@
   box-sizing: border-box;
 }
 body {
-  margin: 0; /* Supprime les marges par défaut du body */
-  padding: 0; /* Supprime les padding par défaut */
+  margin: 0; /* delete defaults margins from body */
+  padding: 0; /* delete default padding */
 }
 
 .base {
-  /* width: 613px;*/
   width: 100%;
   height: 7126px;
   background: linear-gradient(
     rgba(187, 118, 22, 0.69) 0%,
-    /* #BB7616 à 69% d'opacité */ rgba(212, 168, 107, 0.8) 18%,
-    /* #D4A86B à 80% d'opacité */ rgba(237, 218, 193, 0.92) 30%,
-    /* #EDDAC1 à 92% d'opacité */ rgba(249, 243, 235, 0.97) 62%
-      /* #F9F3EB à 97% d'opacité */
+    rgba(212, 168, 107, 0.8) 18%,
+    rgba(237, 218, 193, 0.92) 30%,
+    rgba(249, 243, 235, 0.97) 62%
   );
-
-  /* background: linear-gradient(
-      rgba(187, 118, 21, 0.7),
-      rgba(211, 168, 107, 0.8)
-    );*/
   opacity: 1;
   position: relative;
   top: 0px;
   left: 0px;
   overflow: hidden;
 }
-.bande_horizontale {
+.horizontal_stripe {
   width: 100%;
   height: 214px;
   background: rgba(255, 225, 162, 1);
@@ -37,13 +30,8 @@ body {
   top: 104px;
   left: 0px;
   overflow: hidden;
-
-  /*height: auto; /*Permet à la div de s'adapter au contenu
-    min-height: 214px;*/
 }
 .slogan {
-  /* display: flex;
-    justify-content: center;*/
   width: 640px;
   color: rgba(255, 62, 62, 1);
   position: relative;
@@ -55,16 +43,15 @@ body {
   opacity: 1;
   text-align: center;
 }
-.bande_verticale {
+.vertical_stripe {
   width: 216px;
   height: 100%;
   background: linear-gradient(
     rgba(255, 156, 113, 0.65) 0%,
-    /* #FF9C71 avec 65% d'opacité */ rgba(202, 123, 89, 0.65) 50%,
-    /* #CA7B59 avec 65% d'opacité */ rgba(153, 93, 68, 0.65) 100%
-      /* #995D44 avec 65% d'opacité */
+    rgba(202, 123, 89, 0.65) 50%,
+    rgba(153, 93, 68, 0.65) 100%
   );
-  /*background: linear-gradient(rgba(255, 155, 113, 1), rgba(201, 123, 89, 1));*/
+
   opacity: 1;
   position: relative;
   top: 0px;
@@ -86,212 +73,126 @@ body {
 
 .menu {
   display: flex;
-  justify-content: flex-end; /*space-around;Centre horizontalement les éléments */
+  justify-content: flex-end; /*space-around; Centre horizontalement les éléments */
   align-items: center;
   gap: 0; /* Ajuste l’espace entre chaque élément du menu */
   width: 100%; /* Le menu occupe toute la largeur */
-  /*width: calc(100% - 200px);  Ajuste la largeur pour exclure la div rose */
-  margin-left: 185px; /* Décale le menu pour ne pas chevaucher la div rose */
+  /*width: calc(100% - 200px);  adjust width to exclude the pink div */
+  margin-left: 185px;
   height: 60px; /* Ajuste la hauteur si besoin */
   position: absolute;
-  top: 1px; /* Ajuste la position verticale */
-  /* background: transparent;*/
-  right: 0; /* Positionne le menu contre le bord droit */
+  top: 1px;
+
+  right: 0;
 }
 
-.menu_icone {
+.menu_icon {
   display: flex;
   align-items: center;
   justify-content: center;
   /*right: 100%;*/
-  font-size: 26px; /* Ajuste la taille du texte */
+  font-size: 26px;
   font-family: Inter;
   gap: 10;
   font-weight: bold;
   color: rgba(255, 225, 162, 1);
   text-align: center;
   padding: 0 50px;
-  white-space: nowrap; /* Empêche les textes de passer à la ligne */
+  white-space: nowrap; /* prevents text from wrapping*/
 }
-.menu_icone:hover {
-  /*display: flex;
-    align-items: center;*/
-
+.menu_icon:hover {
   cursor: pointer;
-  /*background-color: rgb(247, 173, 142);*/ /*Vaut mieux pas*/
+  /*background-color: rgb(247, 173, 142);*/ /*better not*/
   border-radius: 10px;
   color: rgba(97, 10, 10, 1);
   transition: background-color 0.2s ease;
 }
 
-/*.menu_item {
-    font-size: 16px;
-    font-family: Inter, sans-serif;
-    font-weight: bold;
-    color: rgba(255, 225, 162, 1);
-    text-align: center;
-    padding: 10px; /* Ajuste le padding autour du texte 
-    white-space: nowrap; /* Empêche les textes de passer à la ligne 
-  }
-  
-  .menu_item:hover {
-    cursor: pointer;
-    background-color: rgb(247, 173, 142);
-    border-radius: 10px;
-    color: rgba(97, 10, 10, 1);
-    transition: background-color 0.2s ease;
-  }*/
-
-/*.menu_baton {
-    display: flex;
-    align-items: center;
-    /* padding-inline: 10px;
-    /*flex-wrap: wrap;
-    gap:10px; Ajuste l'espace entre le texte et les batons
-  }*/
-
-.baton,
-.batons {
+.invisible_bar_right,
+.invisible_bar_left {
   width: 0px;
   height: 72px;
-  margin: 0; /* Supprime tout espace autour des traits */
+  margin: 0;
 }
-.baton {
-  /*width: 1px;
-    height: 72px;
-    margin:0;*/
+.invisible_bar_right {
   background-color: transparent;
 }
-.batons {
-  /*width: 1px;
-    height: 72px;
-    margin:0;*/
+.invisible_bar_left {
   background-color: transparent;
 }
-.sep1,
-.sep2,
-.sep3,
-.sep4 {
+.first_sep,
+.second_sep,
+.third_sep,
+.fourth_sep {
   width: 2px;
   height: 72px;
   margin: 0;
   background-color: rgba(255, 156, 113, 1);
 }
-.menu_icone,
-.sep1,
-.sep2,
-.sep3,
-.sep4 {
-  transform: translateY(15px); /* Descend les traits de 10px */
+.menu_icon,
+.first_sep,
+.second_sep,
+.third_sep,
+.fourth_sep {
+  transform: translateY(15px);
 }
-.oeuvre,
-.tutoriel,
-.mentorat,
-.a_propos,
+.artwork,
+.tutorial,
+.mentoring,
+.about_web,
 .contact:hover {
   background-color: rgba(255, 156, 113, 0.65) 50%;
-  padding: 15px; /* Ajuste le padding autour du texte */
+  padding: 15px;
 }
 
-.oeuvre {
+.artwork {
   font-size: 20px;
   font-family: Inter, sans-serif;
   font-weight: bold;
   color: rgba(255, 225, 162, 1);
   text-align: center;
 
-  white-space: nowrap; /* Empêche les textes de passer à la ligne */
-  /*width: 130px;
-    color: rgba(255, 225, 162, 1);
-    position: absolute;
-    top: 35px;
-    left: 326px;
-    /* font-family: Inter;*/
-  /* font-weight: Bold;*/
-  /*font-size: 13px;
-    opacity: 1;
-    /*text-align: left;*/
-  /*text-align: center;
-    background-color: transparent;
-    /*padding: 10px;*/
+  white-space: nowrap;
 }
-.oeuvre:hover {
+.artwork:hover {
   /*cursor: pointer;*/
   background-color: rgb(247, 173, 142);
   border-radius: 10px;
   color: rgba(97, 10, 10, 1);
   transition: background-color 0.2s ease;
-  /*cursor: pointer;
-    background-color: rgb(247, 173, 142);
-    border-radius: 65px 65px 65px 65px;
-    color: rgba(97, 10, 10, 1);
-    transition: background-color 0.2s ease;*/
 }
-.tutoriel {
+.tutorial {
   font-size: 20px;
   font-family: Inter, sans-serif;
   font-weight: bold;
   color: rgba(255, 225, 162, 1);
   text-align: center;
   white-space: nowrap;
-  /*width: 96px;
-    color: rgba(255, 225, 162, 1);
-    position: absolute;
-    top: 35px;
-    left: 480px;
-    /*font-family: Inter;
-    font-weight: Bold;
-    font-size: 13px;
-    opacity: 1;
-    text-align: center;
-    padding: 10px;
-    background-color: transparent;*/
 }
-.tutoriel:hover {
+.tutorial:hover {
   cursor: pointer;
   background-color: rgb(247, 173, 142);
   border-radius: 10px;
   color: rgba(97, 10, 10, 1);
   transition: background-color 0.2s ease;
-  /* cursor: pointer;
-    background-color: rgb(247, 173, 142);
-    border-radius: 65px 65px 65px 65px;
-    color: rgba(97, 10, 10, 1);
-    transition: background-color 0.2s ease;*/
 }
-.mentorat {
+.mentoring {
   font-size: 20px;
   font-family: Inter, sans-serif;
   font-weight: bold;
   color: rgba(255, 225, 162, 1);
   text-align: center;
   white-space: nowrap;
-  /*width: 92px;
-    color: rgba(255, 225, 162, 1);
-    position: absolute;
-    top: 35px;
-    left: 624px;
-    /* font-family: Inter;
-    font-weight: Bold;
-    font-size: 13px;
-    opacity: 1;
-    text-align: center;
-    padding: 10px;*/
 }
-.mentorat:hover {
+.mentoring:hover {
   cursor: pointer;
   background-color: rgb(247, 173, 142);
   border-radius: 10px;
   color: rgba(97, 10, 10, 1);
   transition: background-color 0.2s ease;
-  /*cursor: pointer;
-    background-color: rgb(247, 173, 142);
-    border-radius: 65px 65px 65px 65px;
-    color: rgba(97, 10, 10, 1);
-    transition: background-color 0.2s ease;*/
 }
 
-.a_propos {
+.about_web {
   font-size: 20px;
   font-family: Inter, sans-serif;
   font-weight: bold;
@@ -299,7 +200,7 @@ body {
   text-align: center;
   white-space: nowrap;
 }
-.a_propos:hover {
+.about_web:hover {
   cursor: pointer;
   background-color: rgb(247, 173, 142);
   border-radius: 10px;
@@ -320,20 +221,8 @@ body {
   font-weight: bold;
   color: rgba(255, 225, 162, 1);
   text-align: center;
-  padding: 15px; /* Ajuste le padding autour du texte */
+  padding: 15px;
   white-space: nowrap;
-
-  /*width: 90px;
-    color: rgba(255, 225, 162, 1);
-    position: absolute;
-    top: 35px;
-    left: 864px;
-    /*font-family: Inter;
-    font-weight: Bold;
-    font-size: 13px;
-    opacity: 1;
-    text-align: center;
-    padding: 10px;*/
 }
 .contact:hover {
   cursor: pointer;
@@ -341,39 +230,32 @@ body {
   border-radius: 10px;
   color: rgba(97, 10, 10, 1);
   transition: background-color 0.2s ease;
-
-  /*cursor: pointer;
-    background-color: rgb(247, 173, 142);
-    border-radius: 65px 65px 65px 65px;
-    color: rgba(97, 10, 10, 1);
-    transition: background-color 0.2s ease;*/
 }
 
-.modif_lien {
-  color: inherit; /* Hérite de la couleur du parent (pas de bleu) */
-  text-decoration: none; /* Supprime le soulignement */
+.mod_link {
+  color: inherit; /* inherits the color of its parent*/
+  text-decoration: none; /* unline delited*/
 }
-.modif_lien:hover {
+.mod_link:hover {
   color: rgba(97, 10, 10, 1);
 }
 
-
-.defilement {
+.choice {
   display: flex;
-  justify-content: space-around; /*répartit les icpones de manière équilibrée*/
+  justify-content: space-around; /*distribued icons in a balanced away*/
   align-items: center;
   /*gap: 20px;*/
   width: 802px;
   height: 134px;
-  border: 1px solid color-none; /*si jamais je décide de mettre les icônes à l'intérieur de cette div*/
+  border: 1px solid color-none; /*if ever I decided to put the icons inside this div*/
   background: rgba(255, 155, 113, 0.7);
   opacity: 1;
   position: absolute;
   overflow: visible;
-  top: 396px; /*197px;*/
+  top: 396px;
   left: 410.04px;
   border-radius: 65px 65px 65px 65px;
-  padding: 0 20px; /*Ajoute un petit padding pour éviter que les icônes touchent les bords*/
+  padding: 0 20px; /*I added a little padding to prevent the icons from touching the edges*/
   /*overflow: hidden;*/
 }
 
@@ -389,7 +271,6 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /*overflow: hidden;*/
 }
 .ceramic {
   /*max-width: 100%;
@@ -547,11 +428,10 @@ body {
 .pearl,
 .textile,
 .wax {
-  /* display: inline-block;*/
-  position: static; /*supprime absolute pour suivre le flux normal*/
+  position: static; /*remove absolute to follow normal flow*/
   text-align: center;
   font-size: 22px;
-  /*margin-top: 5px; /*ajuste l'espacement sous l'icône*/
+  /*margin-top: 5px; /*didn't help me adjust the spacing under the icons even though it's supposed to*/
   margin-top: 88px;
 }
 .pottery,
@@ -586,18 +466,6 @@ body {
   cursor: pointer;
 }
 
-.chocolate,
-.bougie_simple,
-.brown,
-.ocean,
-.copel {
-  width: 256px;
-  height: 342px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-}
-
 .chocolate {
   width: 256px;
   height: 342px;
@@ -611,7 +479,7 @@ body {
   left: -148px;
   overflow: hidden;
 }
-.bougie_simple {
+.single_candle {
   width: 248px;
   height: 330px;
   background: url("image/Bougie_simple.jpg");
@@ -650,7 +518,7 @@ body {
   left: 692px;
   overflow: hidden;
 }
-.copel {
+.cup {
   width: 226px;
   height: 338px;
   background: url("image/coupelle.jpg");
@@ -664,7 +532,7 @@ body {
   overflow: hidden;
 }
 
-.brume {
+.haze {
   width: 264px;
   height: 264px;
   background: url("image/boucle\ d'oreille\ verte\ brume.jpg");
@@ -781,15 +649,7 @@ body {
   left: 814px;
   overflow: hidden;
 }
-.paragraphe_apropos {
-  margin-top: 0%;
-  padding-top: 0px;
-  color: rgba(97, 10, 10, 1);
-  font-family: Inter;
-  font-size: 16px;
-  line-height: 1.6; /*Augmente l'espace entre les lignes pour un rendu plus propre*/
-  text-align: left;
-}
+
 .mark {
   color: rgba(124, 17, 17, 1);
   position: absolute;
@@ -803,92 +663,47 @@ body {
   font-size: 13px;
   margin: 0;
   padding: 40px;
-  /*display: block; /* Si nécessaire pour l'alignement */
-  /*align-content: stretch;*/
 }
-#footrose {
+#foot_text {
   width: 100%;
-  height: auto; /*Permet à la div de s'adapter au contenu*/
+  height: auto; /*allowed the div to adapt to the content*/
   min-height: 300px;
   background: rgba(238, 169, 139, 0.9);
   opacity: 1;
   position: absolute;
   bottom: 108px;
-  /*top: 6661px;*/
-  left: 0%; /*aligne sur la gauche*/
-  padding: 50px 10%; /*Ajoute un padding pour bien centrer le texte */
+
+  left: 0%;
+  padding: 50px 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  border-radius: 0; /*supp tte bordure arrondie*/
+  border-radius: 0; /*remove any rounded embroidery just in case*/
   margin-bottom: 21px;
-
-  /*min-height: 482px;
-    background: rgba(238, 169, 139, 0.9);
-    opacity: 1;
-    position: absolute;
-    top: 3267px;
-    left: 0px;
-    padding: 100px 15%; /*Ajuste l'espacement pour un meilleur rendu*/
-  /*display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    /*overflow: visible; /*permet au texte d'être bien affiché*/
-  /*padding: 108px 20px 50px; /*Ajoute du padding sur les côtés et en bas pour éviter que le texte touche les bords*/
 }
 
-.paragraphe_apropos {
+.paragraph_about {
   margin-top: 0%;
   padding-top: 0px;
   color: rgba(97, 10, 10, 1);
   font-family: Inter;
   font-size: 16px;
-  line-height: 1.6; /*Augmente l'espace entre les lignes pour un rendu plus propre*/
+  line-height: 1.6; /*increase a little the space between lines*/
   text-align: left;
-  /*word-wrap: break-word;*/
-
-  /* font-weight: Regular;
-   
-    text-align: left;
-     /*augente l'espace entre les lignes*/
-  /*word-wrap: break-word; /*Empêche le texte de dépasser*/
-  /* position: static; enlève le positionnement absolu*/
-  /*position: relative;
-    margin-top: 10px;
-    /*top: 3299px;
-    left: 50%;
-    opacity: 1;*/
 }
 
-.entete_apropos {
-  margin-top: 30px; /*Ajoute de l'espace entre le texte et "à propos"*/
+.header_about {
+  margin-top: 30px; /*add space between the text and the "about"*/
   font-size: 22px;
   font-weight: bold;
   color: rgba(124, 17, 17, 1);
   text-shadow: -1px -1px 0 white, 1px 1px 0 white, -1px 1px 0 white,
     1px 1px 0 white;
-  margin-bottom: 20px; /*Ajoute un espace sous le titre*/
-  /*width: auto;
-    color: rgba(124, 17, 17, 1);
-    text-shadow: -1px -1px 0 white, 1px 1px 0 white, -1px 1px 0 white,
-      1px 1px 0 white;
-    font-family: Inter;
-    font-weight: Regular;
-    font-size: 15px;
-    text-align: center;
-    position: static; /*Enlève le positionnement absolu*/
-  /*position: relative;
-    top: 3276px;
-    left: 50%;
-    
-    font-size: 15px;
-    opacity: 1;
-    */
+  margin-bottom: 20px; /*I added a space under the title*/
 }
+
 .button_about {
   margin-top: 20px;
   padding: 10px 20px;
@@ -907,8 +722,8 @@ body {
 .parent {
   display: flex;
   flex-direction: column;
-  gap: 0; /*supp tte espace*/
-  align-items: flex-start; /* Aligne tout au début sans espace */
+  gap: 0; /*delete all space*/
+  align-items: flex-start; /* it aligned it all the way to the beginning with no space */
   padding: 0;
   margin: 0;
 }
@@ -940,8 +755,8 @@ body {
 }
 
 .main_pottery {
-  width: 262px; /*430px;*/
-  height: 384px; /*476px;*/
+  width: 262px;
+  height: 384px;
   background: url("image/main_pottery.jpg");
   background-repeat: no-repeat;
   background-position: center center;
@@ -965,7 +780,7 @@ body {
   left: 1px;
   overflow: hidden;
 }
-.branche {
+.branch_gold {
   width: 238.78px;
   height: 443.9px;
   background: url("image/branche\ rose.jpg");
@@ -1018,7 +833,7 @@ body {
   left: 582px;
   overflow: hidden;
 }
-.lunisolail {
+.lunar_solar {
   width: 430px;
   height: 430px;
   background: url("image/lune\ et\ solail.jpg");
@@ -1029,13 +844,11 @@ body {
   position: absolute;
   bottom: 606.06px;
   left: 340px;
-  /*top: 2214px;
-    left: 74px;*/
   overflow: hidden;
 }
-.tournesol {
-  width: 145px; /*112px;*/
-  height: 150px; /*112*/
+.sunflower {
+  width: 145px;
+  height: 150px;
   background: url("../passionart/image/sunflower.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -1045,14 +858,4 @@ body {
   top: 135px;
   left: 115px;
   overflow: hidden;
-  /* width: 145px;
-    height: 150px;
-    background: url("image/sunflower.png");
-    background-size: cover;
-    background-position: center;
-    opacity: 1;
-    position: absolute;
-    top: 3.8%;
-    left: 35px;
-  */
 }
