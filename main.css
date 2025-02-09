@@ -19,9 +19,9 @@ body {
   );
 
   /* background: linear-gradient(
-    rgba(187, 118, 21, 0.7),
-    rgba(211, 168, 107, 0.8)
-  );*/
+      rgba(187, 118, 21, 0.7),
+      rgba(211, 168, 107, 0.8)
+    );*/
   opacity: 1;
   position: relative;
   top: 0px;
@@ -39,11 +39,11 @@ body {
   overflow: hidden;
 
   /*height: auto; /*Permet à la div de s'adapter au contenu
-  min-height: 214px;*/
+    min-height: 214px;*/
 }
 .slogan {
   /* display: flex;
-  justify-content: center;*/
+    justify-content: center;*/
   width: 640px;
   color: rgba(255, 62, 62, 1);
   position: relative;
@@ -115,7 +115,7 @@ body {
 }
 .menu_icone:hover {
   /*display: flex;
-  align-items: center;*/
+    align-items: center;*/
 
   cursor: pointer;
   /*background-color: rgb(247, 173, 142);*/ /*Vaut mieux pas*/
@@ -125,30 +125,30 @@ body {
 }
 
 /*.menu_item {
-  font-size: 16px;
-  font-family: Inter, sans-serif;
-  font-weight: bold;
-  color: rgba(255, 225, 162, 1);
-  text-align: center;
-  padding: 10px; /* Ajuste le padding autour du texte 
-  white-space: nowrap; /* Empêche les textes de passer à la ligne 
-}
-
-.menu_item:hover {
-  cursor: pointer;
-  background-color: rgb(247, 173, 142);
-  border-radius: 10px;
-  color: rgba(97, 10, 10, 1);
-  transition: background-color 0.2s ease;
-}*/
+    font-size: 16px;
+    font-family: Inter, sans-serif;
+    font-weight: bold;
+    color: rgba(255, 225, 162, 1);
+    text-align: center;
+    padding: 10px; /* Ajuste le padding autour du texte 
+    white-space: nowrap; /* Empêche les textes de passer à la ligne 
+  }
+  
+  .menu_item:hover {
+    cursor: pointer;
+    background-color: rgb(247, 173, 142);
+    border-radius: 10px;
+    color: rgba(97, 10, 10, 1);
+    transition: background-color 0.2s ease;
+  }*/
 
 /*.menu_baton {
-  display: flex;
-  align-items: center;
-  /* padding-inline: 10px;
-  /*flex-wrap: wrap;
-  gap:10px; Ajuste l'espace entre le texte et les batons
-}*/
+    display: flex;
+    align-items: center;
+    /* padding-inline: 10px;
+    /*flex-wrap: wrap;
+    gap:10px; Ajuste l'espace entre le texte et les batons
+  }*/
 
 .baton,
 .batons {
@@ -158,14 +158,14 @@ body {
 }
 .baton {
   /*width: 1px;
-  height: 72px;
-  margin:0;*/
+    height: 72px;
+    margin:0;*/
   background-color: transparent;
 }
 .batons {
   /*width: 1px;
-  height: 72px;
-  margin:0;*/
+    height: 72px;
+    margin:0;*/
   background-color: transparent;
 }
 .sep1,
@@ -202,18 +202,18 @@ body {
 
   white-space: nowrap; /* Empêche les textes de passer à la ligne */
   /*width: 130px;
-  color: rgba(255, 225, 162, 1);
-  position: absolute;
-  top: 35px;
-  left: 326px;
-  /* font-family: Inter;*/
+    color: rgba(255, 225, 162, 1);
+    position: absolute;
+    top: 35px;
+    left: 326px;
+    /* font-family: Inter;*/
   /* font-weight: Bold;*/
   /*font-size: 13px;
-  opacity: 1;
-  /*text-align: left;*/
+    opacity: 1;
+    /*text-align: left;*/
   /*text-align: center;
-  background-color: transparent;
-  /*padding: 10px;*/
+    background-color: transparent;
+    /*padding: 10px;*/
 }
 .oeuvre:hover {
   /*cursor: pointer;*/
@@ -222,10 +222,10 @@ body {
   color: rgba(97, 10, 10, 1);
   transition: background-color 0.2s ease;
   /*cursor: pointer;
-  background-color: rgb(247, 173, 142);
-  border-radius: 65px 65px 65px 65px;
-  color: rgba(97, 10, 10, 1);
-  transition: background-color 0.2s ease;*/
+    background-color: rgb(247, 173, 142);
+    border-radius: 65px 65px 65px 65px;
+    color: rgba(97, 10, 10, 1);
+    transition: background-color 0.2s ease;*/
 }
 .tutoriel {
   font-size: 20px;
@@ -235,17 +235,17 @@ body {
   text-align: center;
   white-space: nowrap;
   /*width: 96px;
-  color: rgba(255, 225, 162, 1);
-  position: absolute;
-  top: 35px;
-  left: 480px;
-  /*font-family: Inter;
-  font-weight: Bold;
-  font-size: 13px;
-  opacity: 1;
-  text-align: center;
-  padding: 10px;
-  background-color: transparent;*/
+    color: rgba(255, 225, 162, 1);
+    position: absolute;
+    top: 35px;
+    left: 480px;
+    /*font-family: Inter;
+    font-weight: Bold;
+    font-size: 13px;
+    opacity: 1;
+    text-align: center;
+    padding: 10px;
+    background-color: transparent;*/
 }
 .tutoriel:hover {
   cursor: pointer;
@@ -254,10 +254,10 @@ body {
   color: rgba(97, 10, 10, 1);
   transition: background-color 0.2s ease;
   /* cursor: pointer;
-  background-color: rgb(247, 173, 142);
-  border-radius: 65px 65px 65px 65px;
-  color: rgba(97, 10, 10, 1);
-  transition: background-color 0.2s ease;*/
+    background-color: rgb(247, 173, 142);
+    border-radius: 65px 65px 65px 65px;
+    color: rgba(97, 10, 10, 1);
+    transition: background-color 0.2s ease;*/
 }
 .mentorat {
   font-size: 20px;
@@ -267,16 +267,16 @@ body {
   text-align: center;
   white-space: nowrap;
   /*width: 92px;
-  color: rgba(255, 225, 162, 1);
-  position: absolute;
-  top: 35px;
-  left: 624px;
-  /* font-family: Inter;
-  font-weight: Bold;
-  font-size: 13px;
-  opacity: 1;
-  text-align: center;
-  padding: 10px;*/
+    color: rgba(255, 225, 162, 1);
+    position: absolute;
+    top: 35px;
+    left: 624px;
+    /* font-family: Inter;
+    font-weight: Bold;
+    font-size: 13px;
+    opacity: 1;
+    text-align: center;
+    padding: 10px;*/
 }
 .mentorat:hover {
   cursor: pointer;
@@ -285,10 +285,10 @@ body {
   color: rgba(97, 10, 10, 1);
   transition: background-color 0.2s ease;
   /*cursor: pointer;
-  background-color: rgb(247, 173, 142);
-  border-radius: 65px 65px 65px 65px;
-  color: rgba(97, 10, 10, 1);
-  transition: background-color 0.2s ease;*/
+    background-color: rgb(247, 173, 142);
+    border-radius: 65px 65px 65px 65px;
+    color: rgba(97, 10, 10, 1);
+    transition: background-color 0.2s ease;*/
 }
 
 .a_propos {
@@ -298,17 +298,6 @@ body {
   color: rgba(255, 225, 162, 1);
   text-align: center;
   white-space: nowrap;
-  /*width: 92px;
-  color: rgba(255, 225, 162, 1);
-  position: absolute;
-  top: 35px;
-  left: 745px;
-  /*font-family: Inter;
-  font-weight: Bold;
-  font-size: 13px;
-  opacity: 1;
-  text-align: center;
-  padding: 10px;*/
 }
 .a_propos:hover {
   cursor: pointer;
@@ -316,12 +305,15 @@ body {
   border-radius: 10px;
   color: rgba(97, 10, 10, 1);
   transition: background-color 0.2s ease;
-  /*cursor: pointer;
-  background-color: rgb(247, 173, 142);
-  border-radius: 65px 65px 65px 65px;
-  color: rgba(97, 10, 10, 1);
-  transition: background-color 0.2s ease;*/
 }
+.about_link {
+  color: inherit;
+  text-decoration: none;
+}
+.about_link:hover {
+  color: rgba(97, 10, 10, 1);
+}
+
 .contact {
   font-size: 20px;
   font-family: Inter, sans-serif;
@@ -330,17 +322,18 @@ body {
   text-align: center;
   padding: 15px; /* Ajuste le padding autour du texte */
   white-space: nowrap;
+
   /*width: 90px;
-  color: rgba(255, 225, 162, 1);
-  position: absolute;
-  top: 35px;
-  left: 864px;
-  /*font-family: Inter;
-  font-weight: Bold;
-  font-size: 13px;
-  opacity: 1;
-  text-align: center;
-  padding: 10px;*/
+    color: rgba(255, 225, 162, 1);
+    position: absolute;
+    top: 35px;
+    left: 864px;
+    /*font-family: Inter;
+    font-weight: Bold;
+    font-size: 13px;
+    opacity: 1;
+    text-align: center;
+    padding: 10px;*/
 }
 .contact:hover {
   cursor: pointer;
@@ -348,12 +341,22 @@ body {
   border-radius: 10px;
   color: rgba(97, 10, 10, 1);
   transition: background-color 0.2s ease;
+
   /*cursor: pointer;
-  background-color: rgb(247, 173, 142);
-  border-radius: 65px 65px 65px 65px;
-  color: rgba(97, 10, 10, 1);
-  transition: background-color 0.2s ease;*/
+    background-color: rgb(247, 173, 142);
+    border-radius: 65px 65px 65px 65px;
+    color: rgba(97, 10, 10, 1);
+    transition: background-color 0.2s ease;*/
 }
+
+.modif_lien {
+  color: inherit; /* Hérite de la couleur du parent (pas de bleu) */
+  text-decoration: none; /* Supprime le soulignement */
+}
+.modif_lien:hover {
+  color: rgba(97, 10, 10, 1);
+}
+
 
 .defilement {
   display: flex;
@@ -390,7 +393,7 @@ body {
 }
 .ceramic {
   /*max-width: 100%;
-  max-height: 100%;*/
+    max-height: 100%;*/
   width: 62px;
   height: 64px;
   background: url("image/oriental.png");
@@ -582,6 +585,19 @@ body {
 .jewel:hover {
   cursor: pointer;
 }
+
+.chocolate,
+.bougie_simple,
+.brown,
+.ocean,
+.copel {
+  width: 256px;
+  height: 342px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
 .chocolate {
   width: 256px;
   height: 342px;
@@ -592,7 +608,7 @@ body {
   opacity: 1;
   position: absolute;
   top: 696px;
-  left: -150px;
+  left: -148px;
   overflow: hidden;
 }
 .bougie_simple {
@@ -647,6 +663,7 @@ body {
   left: 970px;
   overflow: hidden;
 }
+
 .brume {
   width: 264px;
   height: 264px;
@@ -789,7 +806,7 @@ body {
   /*display: block; /* Si nécessaire pour l'alignement */
   /*align-content: stretch;*/
 }
-.footrose {
+#footrose {
   width: 100%;
   height: auto; /*Permet à la div de s'adapter au contenu*/
   min-height: 300px;
@@ -809,18 +826,18 @@ body {
   margin-bottom: 21px;
 
   /*min-height: 482px;
-  background: rgba(238, 169, 139, 0.9);
-  opacity: 1;
-  position: absolute;
-  top: 3267px;
-  left: 0px;
-  padding: 100px 15%; /*Ajuste l'espacement pour un meilleur rendu*/
+    background: rgba(238, 169, 139, 0.9);
+    opacity: 1;
+    position: absolute;
+    top: 3267px;
+    left: 0px;
+    padding: 100px 15%; /*Ajuste l'espacement pour un meilleur rendu*/
   /*display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: left;
-  /*overflow: visible; /*permet au texte d'être bien affiché*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    /*overflow: visible; /*permet au texte d'être bien affiché*/
   /*padding: 108px 20px 50px; /*Ajoute du padding sur les côtés et en bas pour éviter que le texte touche les bords*/
 }
 
@@ -835,16 +852,16 @@ body {
   /*word-wrap: break-word;*/
 
   /* font-weight: Regular;
- 
-  text-align: left;
-   /*augente l'espace entre les lignes*/
+   
+    text-align: left;
+     /*augente l'espace entre les lignes*/
   /*word-wrap: break-word; /*Empêche le texte de dépasser*/
   /* position: static; enlève le positionnement absolu*/
   /*position: relative;
-  margin-top: 10px;
-  /*top: 3299px;
-  left: 50%;
-  opacity: 1;*/
+    margin-top: 10px;
+    /*top: 3299px;
+    left: 50%;
+    opacity: 1;*/
 }
 
 .entete_apropos {
@@ -856,21 +873,21 @@ body {
     1px 1px 0 white;
   margin-bottom: 20px; /*Ajoute un espace sous le titre*/
   /*width: auto;
-  color: rgba(124, 17, 17, 1);
-  text-shadow: -1px -1px 0 white, 1px 1px 0 white, -1px 1px 0 white,
-    1px 1px 0 white;
-  font-family: Inter;
-  font-weight: Regular;
-  font-size: 15px;
-  text-align: center;
-  position: static; /*Enlève le positionnement absolu*/
+    color: rgba(124, 17, 17, 1);
+    text-shadow: -1px -1px 0 white, 1px 1px 0 white, -1px 1px 0 white,
+      1px 1px 0 white;
+    font-family: Inter;
+    font-weight: Regular;
+    font-size: 15px;
+    text-align: center;
+    position: static; /*Enlève le positionnement absolu*/
   /*position: relative;
-  top: 3276px;
-  left: 50%;
-  
-  font-size: 15px;
-  opacity: 1;
-  */
+    top: 3276px;
+    left: 50%;
+    
+    font-size: 15px;
+    opacity: 1;
+    */
 }
 .button_about {
   margin-top: 20px;
@@ -1013,7 +1030,7 @@ body {
   bottom: 606.06px;
   left: 340px;
   /*top: 2214px;
-  left: 74px;*/
+    left: 74px;*/
   overflow: hidden;
 }
 .tournesol {
@@ -1029,13 +1046,13 @@ body {
   left: 115px;
   overflow: hidden;
   /* width: 145px;
-  height: 150px;
-  background: url("image/sunflower.png");
-  background-size: cover;
-  background-position: center;
-  opacity: 1;
-  position: absolute;
-  top: 3.8%;
-  left: 35px;
-*/
+    height: 150px;
+    background: url("image/sunflower.png");
+    background-size: cover;
+    background-position: center;
+    opacity: 1;
+    position: absolute;
+    top: 3.8%;
+    left: 35px;
+  */
 }

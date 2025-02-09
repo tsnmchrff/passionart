@@ -1,0 +1,514 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0; /* Supprime les marges par défaut du body */
+  padding: 0; /* Supprime les padding par défaut */
+}
+
+.base {
+  /* width: 613px;*/
+  width: 100%;
+  height: 1105px;
+  background: linear-gradient(
+    rgba(187, 118, 22, 0.69) 0%,
+    rgba(212, 168, 107, 0.8) 18%,
+    rgba(237, 218, 193, 0.92) 30%,
+    rgba(249, 243, 235, 0.97) 62%
+  );
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.bande_horizontale {
+  width: 100%;
+  height: 214px;
+  background: rgba(255, 225, 162, 1);
+  opacity: 1;
+  position: absolute;
+  top: 104px;
+  left: 0px;
+  overflow: hidden;
+
+  /*height: auto; /*Permet à la div de s'adapter au contenu
+  min-height: 214px;*/
+}
+.slogan {
+  /* display: flex;
+  justify-content: center;*/
+  width: 640px;
+  color: rgba(255, 62, 62, 1);
+  position: relative;
+  top: 65px;
+  left: 55%;
+  font-family: Italiana;
+  font-weight: Regular;
+  font-size: 48px;
+  opacity: 1;
+  text-align: center;
+}
+.bande_verticale {
+  width: 216px;
+  height: 100%;
+  background: linear-gradient(
+    rgba(255, 156, 113, 0.65) 0%,
+    /* #FF9C71 avec 65% d'opacité */ rgba(202, 123, 89, 0.65) 50%,
+    /* #CA7B59 avec 65% d'opacité */ rgba(153, 93, 68, 0.65) 100%
+      /* #995D44 avec 65% d'opacité */
+  );
+  /*background: linear-gradient(rgba(255, 155, 113, 1), rgba(201, 123, 89, 1));*/
+  opacity: 1;
+  position: relative;
+  top: 0px;
+  left: 82px;
+  overflow: hidden;
+}
+.logo {
+  width: 103px;
+  color: rgba(124, 17, 17, 1);
+  position: absolute;
+  top: 14px;
+  left: 10px;
+  font-family: Italiana;
+  font-weight: Regular;
+  font-size: 42px;
+  opacity: 1;
+  text-align: center;
+}
+.logo:hover {
+  cursor: pointer;
+  color: rgb(247, 173, 142);
+}
+
+.modif_link {
+  color: inherit; /* Hérite de la couleur du parent (pas de bleu) */
+  text-decoration: none; /* Supprime le soulignement */
+}
+.menu {
+  display: flex;
+  justify-content: flex-end; /*space-around;Centre horizontalement les éléments */
+  align-items: center;
+  gap: 0; /* Ajuste l’espace entre chaque élément du menu */
+  width: 198px; /* Le menu occupe toute la largeur */
+  /*width: calc(100% - 200px);  Ajuste la largeur pour exclure la div rose */
+  margin-left: 185px; /* Décale le menu pour ne pas chevaucher la div rose */
+  height: 60px; /* Ajuste la hauteur si besoin */
+  position: absolute;
+  top: 1px; /* Ajuste la position verticale */
+  /* background: transparent;*/
+  right: 0; /* Positionne le menu contre le bord droit */
+  left: 298;
+}
+
+.menu_icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*right: 100%;*/
+  font-size: 26px; /* Ajuste la taille du texte */
+  font-family: Inter;
+  gap: 10;
+  font-weight: bold;
+  color: rgba(255, 225, 162, 1);
+  text-align: center;
+  padding: 0 50px;
+  white-space: nowrap; /* Empêche les textes de passer à la ligne */
+}
+.menu_icone:hover {
+  /*display: flex;
+  align-items: center;*/
+
+  cursor: pointer;
+  /*background-color: rgb(247, 173, 142);*/ /*Vaut mieux pas*/
+  border-radius: 10px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;
+}
+
+.baton,
+.batons {
+  width: 0px;
+  height: 72px;
+  margin: 0; /* Supprime tout espace autour des traits */
+}
+.baton {
+  /*width: 1px;
+  height: 72px;
+  margin:0;*/
+  background-color: transparent;
+}
+.batons {
+  /*width: 1px;
+  height: 72px;
+  margin:0;*/
+  background-color: transparent;
+}
+.sep1,
+.sep2,
+.sep3,
+.sep4 {
+  width: 2px;
+  height: 72px;
+  margin: 0;
+  background-color: rgba(255, 156, 113, 1);
+}
+.menu_icone,
+.sep1,
+.sep2,
+.sep3,
+.sep4 {
+  transform: translateY(15px); /* Descend les traits de 10px */
+}
+.oeuvre,
+.tutoriel,
+.mentorat,
+.a_propos,
+.contact:hover {
+  background-color: rgba(255, 156, 113, 0.65) 50%;
+  padding: 15px; /* Ajuste le padding autour du texte */
+}
+
+.oeuvre {
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  color: rgba(255, 225, 162, 1);
+  text-align: center;
+
+  white-space: nowrap; /* Empêche les textes de passer à la ligne */
+  /*width: 130px;
+  color: rgba(255, 225, 162, 1);
+  position: absolute;
+  top: 35px;
+  left: 326px;
+  /* font-family: Inter;*/
+  /* font-weight: Bold;*/
+  /*font-size: 13px;
+  opacity: 1;
+  /*text-align: left;*/
+  /*text-align: center;
+  background-color: transparent;
+  /*padding: 10px;*/
+}
+.oeuvre:hover {
+  /*cursor: pointer;*/
+  background-color: rgb(247, 173, 142);
+  border-radius: 10px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;
+  /*cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 65px 65px 65px 65px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;*/
+}
+.tutoriel {
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  color: rgba(255, 225, 162, 1);
+  text-align: center;
+  white-space: nowrap;
+  /*width: 96px;
+  color: rgba(255, 225, 162, 1);
+  position: absolute;
+  top: 35px;
+  left: 480px;
+  /*font-family: Inter;
+  font-weight: Bold;
+  font-size: 13px;
+  opacity: 1;
+  text-align: center;
+  padding: 10px;
+  background-color: transparent;*/
+}
+.tutoriel:hover {
+  cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 10px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;
+  /* cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 65px 65px 65px 65px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;*/
+}
+.mentorat {
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  color: rgba(255, 225, 162, 1);
+  text-align: center;
+  white-space: nowrap;
+  /*width: 92px;
+  color: rgba(255, 225, 162, 1);
+  position: absolute;
+  top: 35px;
+  left: 624px;
+  /* font-family: Inter;
+  font-weight: Bold;
+  font-size: 13px;
+  opacity: 1;
+  text-align: center;
+  padding: 10px;*/
+}
+.mentorat:hover {
+  cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 10px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;
+  /*cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 65px 65px 65px 65px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;*/
+}
+
+.a_propos {
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  color: rgba(255, 225, 162, 1);
+  text-align: center;
+  white-space: nowrap;
+  /*width: 92px;
+  color: rgba(255, 225, 162, 1);
+  position: absolute;
+  top: 35px;
+  left: 745px;
+  /*font-family: Inter;
+  font-weight: Bold;
+  font-size: 13px;
+  opacity: 1;
+  text-align: center;
+  padding: 10px;*/
+}
+.a_propos:hover {
+  cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 10px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;
+  /*cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 65px 65px 65px 65px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;*/
+}
+.contact {
+  font-size: 20px;
+  font-family: Inter, sans-serif;
+  font-weight: bold;
+  color: rgba(255, 225, 162, 1);
+  text-align: center;
+  padding: 15px; /* Ajuste le padding autour du texte */
+  white-space: nowrap;
+  /*width: 90px;
+  color: rgba(255, 225, 162, 1);
+  position: absolute;
+  top: 35px;
+  left: 864px;
+  /*font-family: Inter;
+  font-weight: Bold;
+  font-size: 13px;
+  opacity: 1;
+  text-align: center;
+  padding: 10px;*/
+}
+.contact:hover {
+  cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 10px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;
+  /*cursor: pointer;
+  background-color: rgb(247, 173, 142);
+  border-radius: 65px 65px 65px 65px;
+  color: rgba(97, 10, 10, 1);
+  transition: background-color 0.2s ease;*/
+}
+
+.mark {
+  color: rgba(124, 17, 17, 1);
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  transform: translation(-50%);
+  font-family: Inter;
+  font-weight: Regular;
+  opacity: 1;
+  text-align: center;
+  font-size: 13px;
+  margin: 0;
+  padding: 40px;
+  /*display: block; /* Si nécessaire pour l'alignement */
+  /*align-content: stretch;*/
+}
+
+.telephone {
+  width: 70px; /*112px;*/
+  height: 70px; /*112*/
+  background: url("../passionart/image/telephone.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 174px;
+  left: 75px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.coordonnees {
+  width: 100%; /*1226px;*/
+  height: 610px;
+  background-color: rgba(247, 247, 247, 0.9);
+  border: 1px solid rgba(200, 200, 200, 0.5); /* Bordure légère */
+  opacity: 1;
+  position: absolute;
+  top: 400px;
+  left: 0px;
+  overflow: hidden;
+
+  /*width: 100%; /*1226px;
+  height: auto; /*Permet à la div de s'adapter au contenu*/
+  /*display: flex; /* Pour aligner gauche et droite côte à côte */
+  /*justify-content: space-between; /* Espace entre gauche et droite */
+  /*align-items: flex-start; /* Aligne les sections en haut */
+  /*gap: 20px; /* Espace entre les deux colonnes */
+  /* padding: 20px;*/
+
+  /*border-radius: 8px;
+  margin: 20px auto;
+  max-width: 1200px;*/
+}
+
+/*.left,
+.right {
+  width: 48%; /* Chaque côté prend environ la moitié de l'espace
+}*/
+.title_left {
+  width: 514px;
+  height: 148;
+  color: rgba(85, 54, 10, 1);
+  position: absolute;
+  top: 50px;
+  left: 36px;
+  font-family: Italiana;
+  font-weight: Bold;
+  opacity: 1;
+  text-align: center;
+  font-size: 24px;
+}
+.horizon {
+  width: 80%; /*374.08px;*/
+  height: 2px;
+  background-color: rgba(85, 54, 10, 0.8);
+  margin: 20px auto;
+  top: 228.14 px;
+}
+
+.title_right {
+  width: 514px;
+  height: 130;
+  position: absolute;
+  top: 12px;
+  left: 706px;
+  font-family: Italiana;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(85, 54, 10, 1);
+  opacity: 1;
+  text-align: left;
+  /*margin-bottom: 10px;*/
+  /*text-align: center;*/
+}
+
+/*.contact_blabla {
+  width: 514px;
+  height: 74px;
+}
+.perso {
+  width: 514px;
+  height: 234px;
+}*/
+/*.contact_blabla,*/
+.perso {
+  width: 514px;
+  color: rgba(85, 53, 9, 1);
+  position: absolute;
+  top: 320px;
+  left: 20px;
+  font-family: Italiana;
+  font-size: 24px;
+  font-weight: bold;
+  opacity: 1;
+  text-align: center;
+}
+
+.geo {
+  width: 735px;
+  height: 426px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 170px;
+  left: 600px;
+  border: 1px solid rgba(85, 53, 9, 1);
+  overflow: hidden;
+}
+.geo iframe {
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Désactive les interactions utilisateur */
+}
+
+.point_separation {
+  width: 10px;
+  height: 10px;
+  background: rgba(85, 53, 9, 1);
+  opacity: 1;
+  position: absolute;
+  top: 43px;
+  left: 240px;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+/*
+.geo {
+  width: 100%; /* Prend tout l'espace disponible à droite 
+  height: 300px; /* Hauteur fixe de la carte 
+  border: 1px solid rgba(85, 54, 10, 1); /* Légère bordure autour 
+  border-radius: 0px;
+  overflow: hidden; /* Cache tout débordement 
+  overflow: hidden; /* Empêche le débordement 
+  margin-top: 20px;
+  position: relative;
+}
+
+
+.geo {
+  width: 100%;
+  min-width: 400px;
+  height: auto;
+ 
+  /*right: 30.06;
+  
+  
+  border: 1px solid rgba(85, 54, 10, 1);
+}
+iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  z-index: 1;
+}*/
