@@ -7,11 +7,11 @@ for (let i = 0; i < images.length; i++) {
   sliderTopcontainer.appendChild(clone);
 }*/
 document.getElementById("go-section").addEventListener("click", function () {
-  const target = document.getElementById("footrose");
+  const target = document.getElementById("foot_text");
   const targetPosition = target.offsetTop; // Position de la cible
   const startPosition = window.pageYOffset; // Position actuelle de défilement
   const distance = targetPosition - startPosition; // Distance à parcourir
-  const duration = 10000; // Durée en millisecondes ici c'est genre 1 seconde en équivalence
+  const duration = 10000; // Durée en millisecondes ici c'est genre 10 seconde en équivalence
   let startTime = null;
 
   function animation(currentTime) {
@@ -32,8 +32,8 @@ document.getElementById("go-section").addEventListener("click", function () {
   requestAnimationFrame(animation);
 });
 
-/*document.getElementById("footrose").scrollIntoView({
+/*document.getElementById("foot_text").scrollIntoView({
     behavior: "smooth", // Animation fluide
-    block: "start", // Défile jusqu'au début de l'élément cible
+    block: "start", // Défile jusqu'au début de mon élément cible
   });
 });*/
